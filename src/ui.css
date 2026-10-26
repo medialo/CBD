@@ -1,0 +1,67 @@
+:root {
+  --text: #1f2330;
+  --muted: #6b7180;
+  --surface: #f6f7fa;
+  --background: #ffffff;
+  --border: #dfe2ea;
+  --hover: #eceef4;
+  --accent: #4c6fd6;
+  --accent-soft: #e6ecfb;
+  --success: #1d8a4e;
+  --success-soft: #e3f4ea;
+  --error: #b42318;
+  --error-soft: #fdecea;
+
+  color: var(--text);
+  font: 14px/1.4 system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--background);
+}
+
+button,
+input {
+  font: inherit;
+  color: inherit;
+}
+
+input:not([type='checkbox']) {
+  padding: 6px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--background);
+}
+
+input:focus-visible,
+button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+button {
+  padding: 6px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--background);
+  cursor: pointer;
+}
+
+button:hover {
+  background: var(--hover);
+}
+
+button.primary {
+  border-color: var(--accent);
+  background: var(--accent);
+  color: #fff;
+}
+
+button.primary:hover {
+  filter: brightness(1.08);
+}
+
+button.danger {
+  color: var(--error);
+}

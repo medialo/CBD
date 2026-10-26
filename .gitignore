@@ -1,0 +1,19 @@
+# Dépendances et build
+node_modules/
+dist/
+.vite/
+coverage/
+
+# Fichiers locaux
+*.local
+.env
+.env.*
+*.log
+npm-debug.log*
+
+# Éditeurs et système
+.idea/
+.vscode/*
+!.vscode/extensions.json
+.DS_Store
+Thumbs.db
